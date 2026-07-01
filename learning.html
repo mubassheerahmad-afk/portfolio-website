@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Journey | Mubasshir Tijjani Yusuf</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            background:#222;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            background:#0d6efd;
+        }
+
+        .container{
+            max-width:900px;
+            margin:40px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            text-align:center;
+            color:#0d6efd;
+            margin-bottom:30px;
+        }
+
+        .timeline{
+            border-left:4px solid #0d6efd;
+            padding-left:20px;
+        }
+
+        .step{
+            margin-bottom:30px;
+            position:relative;
+        }
+
+        .step::before{
+            content:"";
+            position:absolute;
+            left:-32px;
+            top:5px;
+            width:15px;
+            height:15px;
+            background:#0d6efd;
+            border-radius:50%;
+        }
+
+        .step h3{
+            color:#0d6efd;
+            margin-bottom:10px;
+        }
+
+        .step p{
+            line-height:1.7;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+            }
+
+            nav a{
+                text-align:center;
+            }
+
+            .container{
+                margin:20px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mubasshir Tijjani Yusuf</h1>
+    <p>200 Level Software Engineering Student</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="learning.html">Learning Journey</a>
+    <a href="certificate.html">Certificate</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h2>My Learning Journey</h2>
+
+    <div class="timeline">
+
+        <div class="step">
+            <h3>Started My Software Engineering Journey</h3>
+            <p>
+                I began studying Software Engineering to build a strong
+                foundation in programming, problem-solving, and software
+                development.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Learning HTML</h3>
+            <p>
+                I learned how to create web pages using HTML, including
+                headings, paragraphs, images, links, tables, forms,
+                and semantic HTML elements.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Learning CSS</h3>
+            <p>
+                I learned CSS for styling web pages using colors, fonts,
+                spacing, Flexbox, CSS Grid, animations, and responsive
+                web design with media queries.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>freeCodeCamp Responsive Web Design</h3>
+            <p>
+                I completed several practical projects including the
+                Survey Form, Tribute Page, Technical Documentation Page,
+                Product Landing Page, Personal Portfolio Website,
+                Playing Cards, and Book Inventory App.
+            </p>
+        </div>
+
+        <div class="step">
+            <h3>Continuous Improvement</h3>
+            <p>
+                I continue to improve my programming and web development
+                skills by building projects, practicing coding challenges,
+                and learning new technologies every day.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Mubasshir Tijjani Yusuf. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
