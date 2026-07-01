@@ -1,0 +1,24 @@
+portfolio/
+│
+├── index.html
+├── about.html
+├── skills.html
+├── projects.html
+├── services.html
+├── resume.html
+├── gallery.html
+├── contact.html
+├── learning.html
+├── certificate.html
+│
+├── css/
+│   └── style.css
+│
+├── images/
+│   ├── profile.jpg
+│   ├── project1.jpg
+│   ├── project2.jpg
+│   ├── gallery1.jpg
+│   └── certificate.png
+│
+└── README.md
