@@ -1,20 +1,201 @@
-<header>
-    <nav>
-        <h2>Mubasshir</h2>
-       <ul>
-    <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Mubasshir Tijjani Yusuf</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            background:#222;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            background:#0d6efd;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:40px auto;
+            padding:20px;
+        }
+
+        h2{
+            text-align:center;
+            color:#0d6efd;
+            margin-bottom:40px;
+        }
+
+        .services{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:25px;
+        }
+
+        .service-card{
+            background:white;
+            width:320px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+            text-align:center;
+        }
+
+        .service-card:hover{
+            transform:translateY(-8px);
+        }
+
+        .service-card h3{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        .service-card p{
+            line-height:1.6;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+            }
+
+            nav a{
+                text-align:center;
+            }
+
+            .services{
+                flex-direction:column;
+                align-items:center;
+            }
+
+            .service-card{
+                width:100%;
+                max-width:350px;
+            }
+        }
+    </style>
 </head>
 <body>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-        </ul>
-    </nav>
+
+<header>
+    <h1>MUBASSHEIR TIJJANI YUSUF</h1>
+    <p>Software Engineering Student</p>
 </header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="learning.html">learning</a>
+    <a href="gallary.html">gallary</a>
+    <a href="certificate.html">certificate</a>
+</nav>
+
+<div class="container">
+
+    <h2>My Services</h2>
+
+    <div class="services">
+
+        <div class="service-card">
+            <h3>🌐 Web Design</h3>
+            <p>
+                I design clean, attractive, and user-friendly websites using
+                HTML and CSS with responsive layouts that work well on all devices.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>💻 Front-End Development</h3>
+            <p>
+                I build responsive web pages using HTML5, CSS3, and basic
+                JavaScript to create interactive and modern user interfaces.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>📱 Responsive Web Design</h3>
+            <p>
+                I create websites that automatically adapt to desktops,
+                tablets, and smartphones using Flexbox, Grid, and Media Queries.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🎓 Academic Projects</h3>
+            <p>
+                I develop portfolio websites, documentation pages,
+                product landing pages, and other educational web projects.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>🛠 Website Maintenance</h3>
+            <p>
+                I help improve existing websites by fixing layout issues,
+                updating content, and enhancing responsiveness.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>📚 Continuous Learning</h3>
+            <p>
+                I continuously improve my skills through coursework,
+                coding practice, and online platforms such as freeCodeCamp.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Mubasshir Tijjani Yusuf. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
