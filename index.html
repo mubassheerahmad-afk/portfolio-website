@@ -1,246 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Mubasshir Tijjani Yusuf</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Mubasshir Tijjani Yusuf</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-        body{
-            font-family:Arial, Helvetica, sans-serif;
-            background:#f4f4f4;
-            color:#333;
-        }
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
 
-        header{
-            background:#0d6efd;
-            color:white;
-            padding:20px;
-        }
+    header{
+      background:#0d6efd;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
 
-        nav{
-            display:flex;
-            justify-content:center;
-            flex-wrap:wrap;
-            margin-top:15px;
-        }
+    header h1{
+      font-size:2.5rem;
+      margin-bottom:10px;
+    }
 
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin:10px;
-            padding:10px 15px;
-            border-radius:5px;
-            transition:0.3s;
-        }
+    header p{
+      font-size:1.2rem;
+    }
 
-        nav a:hover{
-            background:white;
-            color:#0d6efd;
-        }
+    nav{
+      background:#222;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
 
-        .hero{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            flex-wrap:wrap;
-            max-width:1100px;
-            margin:50px auto;
-            padding:20px;
-        }
+    nav a{
+      color:white;
+      text-decoration:none;
+      padding:15px 20px;
+    }
 
-        .hero-text{
-            flex:1;
-            min-width:300px;
-            padding:20px;
-        }
+    nav a:hover{
+      background:#0d6efd;
+    }
 
-        .hero-text h1{
-            font-size:45px;
-            color:#0d6efd;
-            margin-bottom:15px;
-        }
+    .hero{
+      max-width:900px;
+      margin:40px auto;
+      background:white;
+      padding:40px;
+      border-radius:10px;
+      text-align:center;
+      box-shadow:0 2px 10px rgba(0,0,0,.1);
+    }
 
-        .hero-text h2{
-            font-size:25px;
-            margin-bottom:20px;
-        }
+    .hero h2{
+      color:#0d6efd;
+      margin-bottom:20px;
+    }
 
-        .hero-text p{
-            font-size:18px;
-            line-height:1.7;
-            margin-bottom:25px;
-        }
+    .hero p{
+      margin-bottom:20px;
+      font-size:18px;
+    }
 
-        .btn{
-            display:inline-block;
-            text-decoration:none;
-            background:#0d6efd;
-            color:white;
-            padding:12px 25px;
-            border-radius:6px;
-            transition:0.3s;
-        }
+    .btn{
+      display:inline-block;
+      background:#0d6efd;
+      color:white;
+      text-decoration:none;
+      padding:12px 25px;
+      border-radius:5px;
+      font-weight:bold;
+      transition:.3s;
+    }
 
-        .btn:hover{
-            background:#084298;
-        }
+    .btn:hover{
+      background:#084298;
+    }
 
-        .hero-image{
-            flex:1;
-            min-width:280px;
-            text-align:center;
-            padding:20px;
-        }
+    .features{
+      max-width:1000px;
+      margin:30px auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      padding:20px;
+    }
 
-        .hero-image img{
-            width:300px;
-            height:300px;
-            border-radius:50%;
-            border:6px solid #0d6efd;
-            object-fit:cover;
-        }
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
+      box-shadow:0 2px 10px rgba(0,0,0,.1);
+    }
 
-        .highlights{
-            max-width:1100px;
-            margin:auto;
-            padding:40px 20px;
-            display:flex;
-            flex-wrap:wrap;
-            justify-content:center;
-            gap:20px;
-        }
+    .card h3{
+      color:#0d6efd;
+      margin-bottom:10px;
+    }
 
-        .card{
-            background:white;
-            width:300px;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 2px 10px rgba(0,0,0,.1);
-            text-align:center;
-        }
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
 
-        .card h3{
-            color:#0d6efd;
-            margin-bottom:15px;
-        }
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+      }
 
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:20px;
-            margin-top:40px;
-        }
+      nav a{
+        text-align:center;
+      }
 
-        @media(max-width:768px){
-
-            nav{
-                flex-direction:column;
-            }
-
-            .hero{
-                flex-direction:column-reverse;
-                text-align:center;
-            }
-
-            .hero-text h1{
-                font-size:35px;
-            }
-
-            .hero-image img{
-                width:220px;
-                height:220px;
-            }
-
-        }
-
-    </style>
+      .hero{
+        margin:20px;
+        padding:25px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-
-    <h2 align="center">My Portfolio</h2>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
+  <h1>Mubasshir Tijjani Yusuf</h1>
+  <p>Software Engineering Student | Web Developer</p>
 </header>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="services.html">Services</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="learning.html">Learning</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="certificate.html">Certificate</a>
+</nav>
+
 <section class="hero">
+  <h2>Welcome to My Portfolio</h2>
 
-    <div class="hero-text">
+  <p>
+    Hello! I'm <strong>Mubasshir Tijjani Yusuf</strong>, a Software Engineering
+    student with a passion for creating responsive websites and learning modern
+    web technologies.
+  </p>
 
-        <h1>Hi, I'm Mubasshir Tijjani Yusuf</h1>
+  <p>
+    Explore my portfolio to discover my skills, projects, certifications,
+    and learning journey.
+  </p>
 
-        <h2>200 Level Software Engineering Student</h2>
-
-        <p>
-            Welcome to my personal portfolio website.
-            I am passionate about Software Engineering, Web Development,
-            and creating responsive websites using HTML and CSS.
-            I enjoy learning new technologies and building projects that
-            solve real-world problems.
-        </p>
-
-        <a href="projects.html" class="btn">View My Projects</a>
-
-    </div>
-
-    <div class="hero-image">
-
-        <!-- Replace profile.jpg with your own image -->
-        <img src="profile.jpg" alt="Mubasshir Tijjani Yusuf">
-
-    </div>
-
+  <a href="about.html" class="btn">Learn More About Me</a>
 </section>
 
-<section class="highlights">
+<section class="features">
 
-    <div class="card">
-        <h3>Education</h3>
-        <p>
-            Currently studying Software Engineering and developing practical
-            programming skills through coursework and personal projects.
-        </p>
-    </div>
+  <div class="card">
+    <h3>Skills</h3>
+    <p>HTML, CSS, JavaScript, Responsive Web Design, and problem-solving.</p>
+  </div>
 
-    <div class="card">
-        <h3>Skills</h3>
-        <p>
-            HTML5, CSS3, Responsive Web Design, GitHub,
-            Basic JavaScript, Problem Solving, and Teamwork.
-        </p>
-    </div>
+  <div class="card">
+    <h3>Projects</h3>
+    <p>View websites and applications I've built while learning software engineering.</p>
+  </div>
 
-    <div class="card">
-        <h3>Goals</h3>
-        <p>
-            To become a professional Software Engineer and build
-            innovative applications that positively impact society.
-        </p>
-    </div>
+  <div class="card">
+    <h3>Certificate</h3>
+    <p>See my freeCodeCamp Responsive Web Design Certification.</p>
+  </div>
+
+  <div class="card">
+    <h3>Contact</h3>
+    <p>Let's connect for collaboration, internships, or web development opportunities.</p>
+  </div>
 
 </section>
 
 <footer>
-
-    <p>&copy; 2026 Mubasshir Tijjani Yusuf. All Rights Reserved.</p>
-
+  <p>&copy; 2026 Mubasshir Tijjani Yusuf. All Rights Reserved.</p>
 </footer>
 
 </body>
