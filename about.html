@@ -1,84 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Video Compilation | Mubassheer</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        margin: 0;
-        padding: 0;
-      }
-      main {
-        max-width: 900px;
-        margin: 40px auto;
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      }
-      h1 {
-        text-align: center;
-        color: #0d6efd;
-      }
-      section {
-        margin-top: 30px;
-      }
-      h2 {
-        color: #333;
-      }
-      p {
-        margin: 10px 0 20px;
-      }
-      iframe {
-        display: block;
-        margin: 0 auto;
-        border: none;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>My Favorite Video Compilation</h1>
-      <p>
-        This page showcases three of my favorite videos, each highlighting a
-        different theme. Enjoy watching them directly here!
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Mubasshir Tijjani Yusuf</title>
 
-      <section>
-        <h2>Motivational Talk</h2>
-        <p>A powerful message to inspire and energize you.</p>
-        <iframe
-          src="https://www.youtube.com/embed/ZXsQAXx_ao0"
-          title="Motivational speech video"
-          width="560"
-          height="315"
-        ></iframe>
-      </section>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-      <section>
-        <h2>Nature Documentary</h2>
-        <p>Explore the beauty of wildlife and natural landscapes.</p>
-        <iframe
-          src="https://www.youtube.com/embed/aqz-KE-bpKQ"
-          title="Nature documentary video"
-          width="560"
-          height="315"
-        ></iframe>
-      </section>
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
 
-      <section>
-        <h2>Technology Explained</h2>
-        <p>Learn about innovations shaping our future.</p>
-        <iframe
-          src="https://www.youtube.com/embed/1w8Z0UOXVaY"
-          title="Technology video"
-          width="560"
-          height="315"
-        ></iframe>
-      </section>
-    </main>
-  </body>
+    header{
+      background:#0d6efd;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    nav{
+      background:#222;
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      padding:15px 20px;
+    }
+
+    nav a:hover{
+      background:#0d6efd;
+    }
+
+    .container{
+      max-width:900px;
+      margin:40px auto;
+      background:white;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 2px 10px rgba(0,0,0,.1);
+    }
+
+    h2{
+      color:#0d6efd;
+      margin-bottom:20px;
+      text-align:center;
+    }
+
+    p{
+      margin-bottom:15px;
+      text-align:justify;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+      }
+
+      nav a{
+        text-align:center;
+      }
+
+      .container{
+        margin:20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mubasshir Tijjani Yusuf</h1>
+  <p>Software Engineering Student</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="services.html">Services</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="learning.html">Learning</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="certificate.html">Certificate</a>
+</nav>
+
+<div class="container">
+  <h2>About Me</h2>
+
+  <p>
+    Hello! My name is <strong>Mubasshir Tijjani Yusuf</strong>. I am a Software
+    Engineering student with a passion for web development, programming, and
+    technology. I enjoy learning new skills and building websites that are
+    responsive, user-friendly, and visually appealing.
+  </p>
+
+  <p>
+    I have experience with HTML, CSS, JavaScript, and I am continuously
+    improving my knowledge of modern web technologies and software development.
+    My goal is to become a professional full-stack software engineer capable of
+    creating innovative digital solutions.
+  </p>
+
+  <p>
+    I believe in continuous learning, teamwork, and solving real-world problems
+    through technology. Every project I build helps me improve my coding,
+    creativity, and problem-solving skills.
+  </p>
+
+  <p>
+    Thank you for visiting my portfolio. Feel free to explore my projects,
+    skills, certificates, and contact me for collaboration or opportunities.
+  </p>
+</div>
+
+<footer>
+  <p>&copy; 2026 Mubasshir Tijjani Yusuf. All Rights Reserved.</p>
+</footer>
+
+</body>
 </html>
